@@ -3,14 +3,14 @@ import java.util.ArrayList;
 
 public class Intro {
     public static void main(String[] args) {
-//        printOne();
-//        drawHorizontal(8);
-//        drawVertical(3);
-//        drawRightTriangle(3);
-//        drawIsoscelesTriangle(3);
-//        drawDiamond(3);
-//        drawDiamondWithName(3, "Michelle");
-//        fizzBuzz(15);
+        printOne();
+        drawHorizontal(8);
+        drawVertical(3);
+        drawRightTriangle(3);
+        drawIsoscelesTriangle(3);
+        drawDiamond(3);
+        drawDiamondWithName(3, "Michelle");
+        fizzBuzz(15);
         generate(1);
         generate(30);
 
@@ -19,16 +19,14 @@ public class Intro {
        // Print one asterisk to the console.
 
     public static void printOne() {
-        System.out.print("*");
-        System.out.println();
-
+        System.out.println("*");
     }
 
        // Draw a horizontal line
 
     public static void drawHorizontal(int n) {
         String output = "";
-        for(int i=0; i<n; i++) {
+        for(int i = 0; i < n; i++) {
             output += "*";
         }
         System.out.print(output);
@@ -38,7 +36,7 @@ public class Intro {
         //Draw a vertical line
 
     public static void drawVertical(int n) {
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.println("*");
         }
 
@@ -49,11 +47,10 @@ public class Intro {
 
     public static void drawRightTriangle(int n) {
         String rightTriangleOutput = "";
-        for (int i=0; i<n; i++){
+        for (int i = 0; i < n; i++){
             rightTriangleOutput += "*";
             System.out.print(rightTriangleOutput);
             System.out.println();
-
         }
     }
 
@@ -80,12 +77,7 @@ public class Intro {
 
 //        Diamond
 //        Given a number n, print a centered diamond. Example for n=3:
-//
-//  *
-// ***
-//*****
-// ***
-//  *
+
     public static void drawDiamond(int n){
         // top half of diamond
         for (int i = 0; i<n; i++){
@@ -94,7 +86,7 @@ public class Intro {
                 System.out.print(" ");
             }
             //print out asterix
-            for (int k=0; k<=(i*2); k++){
+            for (int k = 0; k <= (i*2); k++){
                 System.out.print("*");
             }
 
@@ -102,14 +94,14 @@ public class Intro {
         }
 
         // bottom half of diamond
-        // -2 to avoid double up of middle line (i.e. the n-th line)
-        for (int i = (n-2); i>=0; i--){
+            // -2 to avoid middle line duplication(i.e. the n-th line)
+        for (int i = (n-2); i >= 0; i--){
             //print out spaces
-            for (int j=(n-2); j>=i; j--){
+            for (int j = (n-2); j >= i; j--){
                 System.out.print(" ");
             }
             //print out asterix
-            for (int k=0; k<=(i*2); k++){
+            for (int k = 0; k <= (i*2); k++){
                 System.out.print("*");
             }
             System.out.println();
@@ -121,13 +113,14 @@ public class Intro {
 
     public static void drawDiamondWithName(int n, String name){
         // top half of diamond
+
         for (int i = 0; i<(n-1); i++){
             //print out spaces
-            for (int j=(n-2); j>=i; j--){
+            for (int j = (n-2); j >= i; j--){
                 System.out.print(" ");
             }
             //print out asterix
-            for (int k=0; k<=(i*2); k++){
+            for (int k = 0; k <= (i*2); k++){
                 System.out.print("*");
             }
 
@@ -137,16 +130,15 @@ public class Intro {
         System.out.println(name);
 
 
-
         // bottom half of diamond
         // -2 to avoid double up of middle line (i.e. the n-th line)
-        for (int i = (n-2); i>=0; i--){
+        for (int i = (n-2); i >= 0; i--){
             //print out spaces
-            for (int j=(n-2); j>=i; j--){
+            for (int j = (n-2); j >= i; j--){
                 System.out.print(" ");
             }
             //print out asterix
-            for (int k=0; k<=(i*2); k++){
+            for (int k = 0; k <= (i*2); k++){
                 System.out.print("*");
             }
             System.out.println();
@@ -155,7 +147,7 @@ public class Intro {
 
     //fizzBuzz
     public static void fizzBuzz(int n) {
-        for(int i=1; i<=n; i++) {
+        for(int i = 1; i <= n; i++) {
             String text = "";
             Boolean found = false;
 
